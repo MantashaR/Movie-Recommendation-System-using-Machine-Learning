@@ -73,11 +73,5 @@ The bundled sample is for demo purposes. For a more realistic experience, swap i
 - **pandas** — data handling
 - **Streamlit** — web UI
 
-## Deploy free on Streamlit Cloud
-
-1. Push this repo to GitHub (already done).
-2. Go to https://share.streamlit.io and sign in with GitHub.
-3. Click **New app**, select this repo, branch `main`, file `app.py`.
-4. Click **Deploy** — your app is live in ~2 minutes.
 
 
