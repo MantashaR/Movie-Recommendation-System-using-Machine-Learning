@@ -24,14 +24,6 @@ Opens at http://localhost:8501
 └── README.md
 ```
 
-## Quickstart (local)
-
-```bash
-git clone https://github.com/MantashaR/Movie-Recommendation-System-using-Machine-Learning.git
-cd Movie-Recommendation-System-using-Machine-Learning
-pip install -r requirements.txt
-streamlit run app.py
-```
 
 The app runs immediately using the bundled `sample_movies.csv` (35 popular movies).
 
@@ -88,6 +80,4 @@ The bundled sample is for demo purposes. For a more realistic experience, swap i
 3. Click **New app**, select this repo, branch `main`, file `app.py`.
 4. Click **Deploy** — your app is live in ~2 minutes.
 
-## License
 
-MIT — see `LICENSE` if present, otherwise open an issue to request one.
