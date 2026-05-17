@@ -1,0 +1,36 @@
+movie_id,title,genres,cast,keywords,overview
+1,The Dark Knight,Action|Crime|Drama,Christian Bale|Heath Ledger|Aaron Eckhart,superhero|joker|batman|vigilante|dc comics,Batman faces the Joker a criminal mastermind who plunges Gotham into anarchy.
+2,The Shawshank Redemption,Drama,Tim Robbins|Morgan Freeman|Bob Gunton,prison|friendship|hope|wrongful conviction|escape,Two imprisoned men bond over the years finding solace and eventual redemption.
+3,Inception,Action|Sci-Fi|Thriller,Leonardo DiCaprio|Joseph Gordon-Levitt|Elliot Page,dream|heist|subconscious|mind|reality,A thief who steals corporate secrets through dream-sharing technology must plant an idea.
+4,Interstellar,Adventure|Drama|Sci-Fi,Matthew McConaughey|Anne Hathaway|Jessica Chastain,space|black hole|time|wormhole|nasa,A team of explorers travel through a wormhole in space in an attempt to ensure humanity survival.
+5,The Matrix,Action|Sci-Fi,Keanu Reeves|Laurence Fishburne|Carrie-Anne Moss,simulation|hacker|reality|machines|cyberpunk,A computer hacker learns the true nature of reality is a simulated world.
+6,Pulp Fiction,Crime|Drama,John Travolta|Samuel L Jackson|Uma Thurman,hitmen|gangster|nonlinear|drugs|boxer,The lives of two mob hitmen a boxer and others intertwine in tales of violence.
+7,Forrest Gump,Drama|Romance,Tom Hanks|Robin Wright|Gary Sinise,life journey|love|war|vietnam|simple,The presidencies of Kennedy and Johnson the Vietnam War unfold from the perspective of a slow-witted Alabama man.
+8,The Godfather,Crime|Drama,Marlon Brando|Al Pacino|James Caan,mafia|family|sicily|patriarch|crime family,The aging patriarch of an organized crime dynasty transfers control to his reluctant son.
+9,Fight Club,Drama|Thriller,Brad Pitt|Edward Norton|Helena Bonham Carter,underground|insomnia|consumerism|alter ego|anarchy,An insomniac office worker and a soap salesman form an underground fight club.
+10,The Avengers,Action|Adventure|Sci-Fi,Robert Downey Jr|Chris Evans|Scarlett Johansson,superhero|team|marvel|aliens|new york,Earth mightiest heroes must come together to stop Loki and his alien army.
+11,Iron Man,Action|Adventure|Sci-Fi,Robert Downey Jr|Gwyneth Paltrow|Jeff Bridges,superhero|marvel|technology|billionaire|armor,A billionaire industrialist builds a powered suit of armor to fight evil.
+12,Spider-Man No Way Home,Action|Adventure|Sci-Fi,Tom Holland|Zendaya|Benedict Cumberbatch,superhero|marvel|multiverse|villains|magic,Spider-Man seeks help from Doctor Strange when his identity is revealed.
+13,Toy Story,Animation|Adventure|Comedy,Tom Hanks|Tim Allen|Don Rickles,toys|friendship|adventure|pixar|childhood,A cowboy doll is profoundly threatened when a new spaceman action figure arrives.
+14,Finding Nemo,Animation|Adventure|Family,Albert Brooks|Ellen DeGeneres|Alexander Gould,ocean|fish|father|son|adventure,A timid clownfish sets out to bring his missing son home from the ocean.
+15,The Lion King,Animation|Drama|Family,Matthew Broderick|James Earl Jones|Jeremy Irons,lion|kingdom|father|son|africa,Lion prince Simba flees his kingdom only to learn the true meaning of responsibility.
+16,Frozen,Animation|Adventure|Family,Kristen Bell|Idina Menzel|Jonathan Groff,sisters|ice|magic|kingdom|disney,A fearless princess sets off on a journey to find her estranged sister whose icy powers have trapped the kingdom.
+17,Avatar,Action|Adventure|Sci-Fi,Sam Worthington|Zoe Saldana|Sigourney Weaver,aliens|pandora|nature|military|3d,A paraplegic Marine is dispatched to the moon Pandora on a unique mission.
+18,Titanic,Drama|Romance,Leonardo DiCaprio|Kate Winslet|Billy Zane,ship|disaster|love|class|tragedy,A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious Titanic.
+19,Joker,Crime|Drama|Thriller,Joaquin Phoenix|Robert De Niro|Zazie Beetz,villain|origin|mental illness|gotham|dc comics,In Gotham City failed comedian Arthur Fleck embarks on a downward spiral of revolution.
+20,La La Land,Comedy|Drama|Musical|Romance,Ryan Gosling|Emma Stone|John Legend,jazz|musical|los angeles|love|dreams,A jazz pianist falls for an aspiring actress in Los Angeles.
+21,Parasite,Drama|Thriller,Song Kang-ho|Lee Sun-kyun|Cho Yeo-jeong,class|wealth|family|korean|dark comedy,A poor family schemes to become employed by a wealthy family by infiltrating their household.
+22,The Social Network,Biography|Drama,Jesse Eisenberg|Andrew Garfield|Justin Timberlake,facebook|startup|harvard|lawsuit|tech,The story of the founding of Facebook and the lawsuits that followed.
+23,Whiplash,Drama|Music,Miles Teller|J K Simmons|Paul Reiser,jazz|drums|conservatory|mentor|obsession,A promising young drummer enrolls at a music conservatory where his dreams are mentored by an instructor.
+24,1917,Drama|War,George MacKay|Dean-Charles Chapman|Mark Strong,world war|soldier|mission|trenches|france,Two young British soldiers during the First World War are given an impossible mission.
+25,Dunkirk,Action|Drama|War,Fionn Whitehead|Tom Hardy|Mark Rylance,world war|evacuation|beach|soldiers|britain,Allied soldiers are surrounded by the German Army and evacuated during a fierce battle.
+26,The Hangover,Comedy,Bradley Cooper|Ed Helms|Zach Galifianakis,bachelor party|las vegas|wedding|amnesia|friends,Three buddies wake up from a bachelor party in Las Vegas with no memory.
+27,Superbad,Comedy,Jonah Hill|Michael Cera|Christopher Mintz-Plasse,high school|friendship|coming of age|party|teenagers,Two co-dependent high school seniors are forced to deal with separation anxiety.
+28,The Grand Budapest Hotel,Adventure|Comedy|Drama,Ralph Fiennes|Tony Revolori|Mathieu Amalric,hotel|concierge|painting|europe|whimsical,A legendary concierge at a famous European hotel and a young employee become friends.
+29,Mad Max Fury Road,Action|Adventure|Sci-Fi,Tom Hardy|Charlize Theron|Nicholas Hoult,post apocalyptic|desert|chase|wasteland|cars,In a post-apocalyptic wasteland a woman rebels against a tyrannical ruler.
+30,John Wick,Action|Crime|Thriller,Keanu Reeves|Michael Nyqvist|Alfie Allen,hitman|revenge|dog|assassin|new york,An ex-hitman comes out of retirement to track down the gangsters who killed his dog.
+31,Gladiator,Action|Adventure|Drama,Russell Crowe|Joaquin Phoenix|Connie Nielsen,rome|revenge|empire|slave|colosseum,A former Roman General sets out to exact vengeance against the corrupt emperor.
+32,Saving Private Ryan,Drama|War,Tom Hanks|Matt Damon|Tom Sizemore,world war|d-day|soldiers|brothers|mission,Following the Normandy landings a group of soldiers go behind enemy lines to retrieve a paratrooper.
+33,Schindlers List,Biography|Drama|History,Liam Neeson|Ralph Fiennes|Ben Kingsley,holocaust|world war|jews|nazi|factory,A businessman saves the lives of more than a thousand Jewish refugees during the Holocaust.
+34,The Departed,Crime|Drama|Thriller,Leonardo DiCaprio|Matt Damon|Jack Nicholson,undercover|mob|boston|police|infiltration,An undercover cop and a mole in the police attempt to identify each other.
+35,Goodfellas,Biography|Crime|Drama,Robert De Niro|Ray Liotta|Joe Pesci,mafia|crime|new york|brooklyn|narration,The story of Henry Hill and his life in the mob.

@@ -1,55 +1,93 @@
-# Movie-Recommendation-System-using-Machine-Learning
-A content-based Movie Recommendation System using ML and NLP that suggests similar movies based on cosine similarity of movie features, built in Google Colab using Kaggle dataset.
-<br>
+# Movie Recommendation System
 
-A Machine Learning-based Movie Recommendation System built using Python in Google Colab.  
-It suggests movies similar to a user's selected movie using content-based filtering and NLP techniques.
+A content-based movie recommender built with **TF-IDF + cosine similarity** and a **Streamlit** web UI.
 
+Pick a movie you like, get a ranked list of similar movies based on genres, cast, keywords, and plot.
 
+## Demo
 
-## 📌 Project Overview
+```
+streamlit run app.py
+```
 
-This project recommends movies based on their similarity in features like:
-- Genre
-- Cast
-- Keywords
-- Overview (description)
+Opens at http://localhost:8501
 
+## Project structure
 
-## 🧠 How It Works
+```
+.
+├── app.py                       # Streamlit UI
+├── recommender.py               # TF-IDF + cosine similarity model
+├── requirements.txt
+├── dataset/
+│   └── sample_movies.csv        # Bundled 35-movie sample (works out of the box)
+└── README.md
+```
 
-1. Data is collected from the TMDB dataset (Kaggle)
-2. Relevant features are combined into a single text field
-3. Text is converted into vectors using **TF-IDF**
-4. Cosine similarity is calculated between all movies
-5. Top similar movies are recommended
+## Quickstart (local)
 
-## 📊 Dataset
+```bash
+git clone https://github.com/MantashaR/Movie-Recommendation-System-using-Machine-Learning.git
+cd Movie-Recommendation-System-using-Machine-Learning
+pip install -r requirements.txt
+streamlit run app.py
+```
 
-- Source: Kaggle TMDB Movie Dataset  
-- Contains movie details like title, overview, genre, cast, etc.
+The app runs immediately using the bundled `sample_movies.csv` (35 popular movies).
 
-## 🛠️ Tech Stack
+## Using the full TMDB 5000 dataset
 
-- Python 🐍  
-- Google Colab  
-- Pandas  
-- NumPy  
-- Scikit-learn  
-- NLP (TF-IDF Vectorizer)
+The bundled sample is for demo purposes. For a more realistic experience, swap in the full Kaggle dataset:
 
-## 🚀 Features
+1. Download from [Kaggle: TMDB 5000 Movie Dataset](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata)
+2. Run a small preprocessing script to merge `tmdb_5000_movies.csv` and `tmdb_5000_credits.csv` into the schema the app expects:
 
-- Recommend similar movies instantly
-- Content-based filtering system
-- Simple and fast predictions
-- Easy to extend with UI (Streamlit/Flask)
+   ```python
+   import ast, pandas as pd
+   movies = pd.read_csv("tmdb_5000_movies.csv")
+   credits = pd.read_csv("tmdb_5000_credits.csv")
+   df = movies.merge(credits, on="title")
 
-## 📂 Project Structure
+   def names(s, top=3):
+       try:
+           return "|".join(d["name"] for d in ast.literal_eval(s)[:top])
+       except Exception:
+           return ""
 
-```text
-movie-recommendation-system/
-│
-├── movie_recommender.ipynb   # Main Colab notebook
-├── dataset/                  # Kaggle dataset files
-├── README.md                 # Project documentation
+   out = pd.DataFrame({
+       "movie_id": df["id"],
+       "title": df["title"],
+       "genres": df["genres"].apply(lambda s: names(s, 5)),
+       "cast": df["cast"].apply(lambda s: names(s, 3)),
+       "keywords": df["keywords"].apply(lambda s: names(s, 8)),
+       "overview": df["overview"].fillna(""),
+   })
+   out.to_csv("dataset/sample_movies.csv", index=False)
+   ```
+
+3. Restart the Streamlit app — it will pick up the new dataset automatically.
+
+## How it works
+
+1. **Feature combination** — Genres, cast, keywords, and overview are concatenated into a single text field per movie.
+2. **TF-IDF vectorization** — `TfidfVectorizer` converts the text into a sparse matrix, weighting rare informative tokens higher than common ones.
+3. **Cosine similarity** — Pairwise similarity is computed between all movie vectors.
+4. **Ranking** — For a chosen movie, the top-N most similar are returned (excluding the movie itself).
+
+## Tech stack
+
+- **Python 3.10+**
+- **scikit-learn** — TF-IDF + cosine similarity
+- **pandas** — data handling
+- **Streamlit** — web UI
+
+## Deploy free on Streamlit Cloud
+
+1. Push this repo to GitHub (already done).
+2. Go to https://share.streamlit.io and sign in with GitHub.
+3. Click **New app**, select this repo, branch `main`, file `app.py`.
+4. Click **Deploy** — your app is live in ~2 minutes.
+
+## License
+
+MIT — see `LICENSE` if present, otherwise open an issue to request one.

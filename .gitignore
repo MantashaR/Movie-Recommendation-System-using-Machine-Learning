@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+.streamlit/secrets.toml
+.DS_Store
+.idea/
+.vscode/
+*.egg-info/
+tmdb_5000_movies.csv
+tmdb_5000_credits.csv
